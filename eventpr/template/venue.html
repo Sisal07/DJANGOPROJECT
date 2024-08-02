@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Venue
+{% endblock %}
+
+{% block content %}
+<style>
+    .nav-link.active {
+        color: red !important;
+    }
+</style>
+{% load static %}
+<h2 class="text-center"><strong> <u> Venues </u></strong></h2>
+
+<div class="container mt-5">
+    {% for i in eve %}
+    <div class="card text-center" style="width: 35rem; display: inline-block; margin: 15px;">
+        <img src="{% if i.image %}{{ i.image.url }}{% else %}{% static 'images/venue1.jpg' %}{% endif %}" 
+             class="card-img-top" 
+             alt="Default Image" 
+             height="470px" 
+             width="500px">
+        <div class="card-body">
+            <h2 class="card-title">{{ i.name }}</h2>
+            <p class="card-text"><strong>Location:</strong> {{ i.location }}</p>
+            <p class="card-text"><strong>Capacity:</strong> {{ i.capacity }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

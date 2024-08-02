@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>about</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:MediumSeaGreen; 
+            font-family: Impact, Haettenschweiler,'Ariel Narrow Bold', sans-serif; font-size: 20px;" >The Event Architects</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'about' %}" style="color: white;" onmouseover="this.style.color='red';">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'venue' %}">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'privacy' %}">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'online' %}">Online Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">History <span
+                        class="text-body-secondary">[The Event Architects]</span></h2>
+                <p class="lead"><ul>
+                    <li> <strong>Founding:</strong> Established in 29<sup>th</sup> April, 2022 by Sisal Acharya.</li>
+                    <li> <strong>Early Success:</strong> Rapidly gained traction for creative event solutions.</li>
+                    <li> <strong>Growth and Expansion:</strong> As The Event Architects gained momentum, 
+                        it expanded its services to cater to a wider range of events, including weddings, corporate functions, social gatherings, 
+                        and more. With a growing portfolio of successful events and satisfied clients, the company began to establish itself as a trusted name in the 
+                        event management industry.
+
+                    </li>
+                    <li> <strong>Innovations:</strong> Throughout its journey, The Event Architects has remained committed to innovation and staying ahead
+                         of industry trends. The company has continuously invested in new technologies and methodologies to enhance its event planning and execution processes,
+                          ensuring that each event is memorable and impactful</li>
+                    <li> <strong>Looking Ahead:</strong> Today, The Event Architects stands as a leading event management firm, known for its creativity,
+                         professionalism, and ability to deliver exceptional experiences. As the company looks to the future, it remains dedicated to its founding principles of
+                          excellence, integrity, and passion for creating unforgettable events</li>
+                  </ul></p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" role="img" aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{% static 'images/us.1.jpg' %}" alt="Failed To Load Image">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Objectives <span
+                        class="text-body-secondary">[The Event Architects]</span></h2>
+                <p class="lead">
+                    <ol>
+                        <li> <strong>Client-Centric Approach:</strong> Our mission is to prioritize client satisfaction by delivering
+                             personalized event experiences that exceed expectations and create lasting memories.</li>
+                        <li> <strong>Innovation and Creativity:</strong> We strive to bring innovation and creativity to every event we manage,
+                             ensuring each experience is unique, engaging, and memorable.</li>
+                        <li> <strong>Professionalism and Integrity:</strong> We are committed to upholding the highest standards of professionalism
+                             and integrity in all our interactions, earning the trust and confidence of our clients and partners.
+
+                        </li>
+                        <li> <strong>Sustainability and Responsibility:</strong> We recognize our responsibility to minimize our environmental footprint
+                             and prioritize sustainable practices in event planning and management.
+
+                        </li>
+                        <li> <strong>Continuous Improvement:</strong> We are dedicated to continuously improving our processes, embracing new technologies, 
+                            and staying ahead of industry trends to better serve our clients and deliver exceptional experiences.</li>
+                      </ol>
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" role="img" aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{% static 'images/us.2.jpg' %}" alt="Failed To Load Image">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Why Choose Us. <span
+                        class="text-body-secondary">[The Event Architects]</span></h2><br><br>
+                <p class="lead"><ol>
+                    <li> <strong>Experience:</strong> With a proven track record of success, our team brings
+                         years of expertise to every event.</li><br>
+                    <li> <strong>Creativity:</strong> We thrive on innovation and are constantly pushing
+                         the boundaries to deliver fresh and exciting event concepts.</li><br>
+                    <li> <strong>Attention to Detail:</strong> From concept to execution, we sweat the small
+                         stuff so you don't have to, ensuring a flawless event every time.</li><br>
+                    <li> <strong>Personalized Service:</strong> Your satisfaction is our top priority, and
+                         we go above and beyond to exceed your expectations at every turn.</li>
+                  </ol></p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" role="img" aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice" focusable="false" src="{% static 'images/us.3.jpg' %}" alt="Failed To Load Image">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row" style="justify-content: center; margin-left: 180px;">
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" 
+              role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <image href="{% static 'images/sisal.jpg' %}" width="100%" height="100%" clip-path="circle(70px at center)" />
+              </svg>
+              <h2 class="fw-normal" style="margin-left: 10px;">Founder</h2>
+              <p>Sisal, the visionary founder of The Event Architects, established the company in 2022 with a passion for creating unforgettable experiences.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+               role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+               <image href="{% static 'images/jagdish.jpg' %}" width="100%" height="100%" clip-path="circle(70px at center)" />
+              </svg>
+              <h2 class="fw-normal">Co-Founder</h2>
+              <p>Jagdish, co-founder of The Event Architects, brought his passion for creativity and organizational expertise to the company in 2022.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+               role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+               <image href="{% static 'images/rupesh.jpg' %}" width="100%" height="100%" clip-path="circle(70px at center)" />
+            </svg>
+              <h2 class="fw-normal" style="margin-right: 30px;">President</h2>
+              <p>Rupesh, the president of The Event Architects, has been leading the company with exceptional vision and dedication since 2022. </p>
+            </div><!-- /.col-lg-4 -->
+          </div>
+    </div>
+
+    <footer
+        style="background-color: #333; color: white; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
+        <p style="margin: 5px 0;">&copy; 2024 Event Management. All rights reserved.</p>
+        <p style="margin: 5px 0;">Contact us: <a href="mailto:info@eventarchtiects.com"
+                style="color: MediumSeaGreen;">info@eventarchitects.com</a></p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank"
+                style="color: MediumSeaGreen; text-decoration: none; margin: 0 10px;">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank"
+                style="color: MediumSeaGreen; text-decoration: none; margin: 0 10px;">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank"
+                style="color: MediumSeaGreen; text-decoration: none; margin: 0 10px;">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank"
+                style="color: MediumSeaGreen; text-decoration: none; margin: 0 10px;">LinkedIn</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
